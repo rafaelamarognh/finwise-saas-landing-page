@@ -14,7 +14,7 @@ export interface IBenefitBullet {
     title: string;
     description: string;
     icon?: JSX.Element;
-    image?: any;
+    image?: unknown;
 }
 
 export interface IPricing {
