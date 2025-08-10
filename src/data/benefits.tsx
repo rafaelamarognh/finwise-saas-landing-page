@@ -1,5 +1,3 @@
-import { FiBarChart2, FiBriefcase, FiCpu, FiDollarSign, FiLock, FiPieChart, FiSend, FiShield, FiTarget, FiTrendingUp, FiUser, FiZap } from "react-icons/fi";
-
 import { IBenefit } from "@/types"
 
 import selesCard from '../../public/images/vendas.png'
