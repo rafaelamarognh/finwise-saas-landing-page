@@ -2,24 +2,28 @@ import { IFAQ } from "@/types";
 import { siteDetails } from "./siteDetails";
 
 export const faqs: IFAQ[] = [
-    {
-        question: `Is ${siteDetails.siteName} secure?`,
-        answer: 'Absolutely. We use bank-level encryption to protect your data and never store your login information. Plus, our biometric authentication adds an extra layer of security.',
-    },
-    {
-        question: `Can I use ${siteDetails.siteName} on multiple devices?`,
-        answer: 'Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer.',
-    },
-    {
-        question: 'Can I connect all my bank accounts?',
-        answer: `Yes! ${siteDetails.siteName} supports connections with over 10,000 financial institutions worldwide. Simply log in through our secure portal to link your accounts.`
-    },
-    {
-        question: 'Do I need any financial expertise to use the investing features?',
-        answer: 'Not at all! Our expert-curated portfolios and educational resources make investing accessible to everyone, regardless of experience level.',
-    },
-    {
-        question: 'What if I need help using the app?',
-        answer: 'Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise.'
-    }
+  {
+    question: `É seguro usar o ${siteDetails.siteName}?`,
+    answer: `Sim! Utilizamos encriptação de nível bancário e não armazenamos seus dados de login. Além disso, oferecemos monitoramento contínuo e intervenção automática caso detectemos risco de bloqueio.`,
+  },
+  {
+    question: `Quanto tempo leva para “aquecer” um chip com segurança?`,
+    answer: `Em geral, o processo leva de 7 a 14 dias, com interações graduais e variadas. Nossos clientes relatam estabilidade já a partir da primeira semana de uso — e você pode testar isso com nossa garantia de 7 dias grátis.`,
+  },
+  {
+    question: `Posso re-utilizar ou revender os chips após o aquecimento?`,
+    answer: `Sim, mas com cautela. É possível reaquecer um chip depois de um uso interno — e, sim, você pode revender aqueles que se mantêm saudáveis, mas aconselhamos sempre monitorar a reputação deles com nosso painel antes de transferir.`,
+  },
+  {
+    question: `Quantas mensagens posso enviar por dia sem correr risco de bloqueio?`,
+    answer: `Comece com 20–50 mensagens diárias por chip e aumente gradualmente conforme nossa recomendação no painel. Essa abordagem evita que o número seja marcado como suspeito.`,
+  },
+  {
+    question: `E se meu número for bloqueado durante o uso?`,
+    answer: `Você conta com suporte imediato dentro da plataforma para reverter bloqueios. A maioria dos casos é solucionada com nossa política de apelação rápida e templates de defesa prontos para envio.`,
+  },
+  {
+    question: `Vocês oferecem serviços complementares, como consultoria ou equipe para gerenciar os chips?`,
+    answer: `Claro! Além do app, oferecemos planos com consultoria estratégica e gerenciamento completo dos chips — ideal para equipes que desejam escalar sem complicação.`,
+  },
 ];

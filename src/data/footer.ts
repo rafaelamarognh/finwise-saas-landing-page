@@ -7,31 +7,27 @@ export const footerDetails: {
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Empowering businesses with cutting-edge financial technology solutions.",
+    subheading: "Mantendo seus números de WhatsApp ativos e livres de bloqueio, com tecnologia de ponta.",
     quickLinks: [
         {
-            text: "Features",
+            text: "Recursos",
             url: "#features"
         },
         {
-            text: "Pricing",
+            text: "Planos",
             url: "#pricing"
         },
         {
-            text: "Testimonials",
+            text: "Depoimentos",
             url: "#testimonials"
         }
     ],
-    email: 'address@yoursite.com',
-    telephone: '+1 (123) 456-7890',
+    email: 'contatodatadrivenlab@gmail.com',
+    telephone: '+55 (47) 9 9247-9009',
     socials: {
-        // github: 'https://github.com',
-        // x: 'https://twitter.com/x',
         twitter: 'https://twitter.com/Twitter',
         facebook: 'https://facebook.com',
-        // youtube: 'https://youtube.com',
         linkedin: 'https://www.linkedin.com',
-        // threads: 'https://www.threads.net',
         instagram: 'https://www.instagram.com',
     }
 }

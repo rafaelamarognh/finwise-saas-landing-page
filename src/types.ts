@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface IMenuItem {
     text: string;
     url: string;
@@ -13,7 +15,8 @@ export interface IBenefit {
 export interface IBenefitBullet {
     title: string;
     description: string;
-    icon: JSX.Element;
+    icon?: JSX.Element;
+    image?: any;
 }
 
 export interface IPricing {

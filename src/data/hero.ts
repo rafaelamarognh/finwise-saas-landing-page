@@ -1,5 +1,5 @@
 export const heroDetails = {
-    heading: 'Smart, Secure, Simple Financial Management',
-    subheading: 'From effortless budgeting to real-time investment insights, Finwise puts you in control of your money like never before',
-    centerImageSrc: '/images/hero-mockup.webp',
+    heading: 'Aquecimento de Chip para WhatsApp!',
+    subheading: 'Não perca tempo com chips bloqueados, mature seus chips com a ZapFy!',
+    centerImageSrc: '/images/zapfy-hero-012.png',
 }

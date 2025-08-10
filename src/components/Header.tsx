@@ -9,6 +9,8 @@ import { FaFingerprint } from 'react-icons/fa';
 import Container from './Container';
 import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
+import Image from 'next/image';
+import LogoPng from '../../public/images/logo.png'
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,15 +23,25 @@ const Header: React.FC = () => {
         <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
             <Container className="!px-0">
                 <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
-                    {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2">
-                        <FaFingerprint className="text-foreground min-w-fit w-7 h-7" />
-                        <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
-                            {siteDetails.siteName}
-                        </span>
-                    </Link>
+                    <Link href="/" className="flex items-center group">
+                    <Image
+                        src={LogoPng}
+                        alt="frogify"
+                        priority
+                        className="h-14 w-auto"
+                    />
 
-                    {/* Desktop Menu */}
+                    <div className="leading-tight">
+                        <div className="text-3xl md:text-2xl font-semibold tracking-tight lowercase">
+                        <span className="text-green-600">zap</span>
+                        <span className="bg-gradient-to-r from-emerald-400 via-lime-400 to-cyan-400 bg-clip-text text-transparent">
+                            ify
+                        </span>
+                        </div>
+
+                    
+                    </div>
+                    </Link>
                     <ul className="hidden md:flex space-x-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
@@ -50,7 +62,7 @@ const Header: React.FC = () => {
                         <button
                             onClick={toggleMenu}
                             type="button"
-                            className="bg-primary text-black focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
+                            className="bg-green-600 text-white focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
                             aria-controls="mobile-menu"
                             aria-expanded={isOpen}
                         >
@@ -85,9 +97,17 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
-                                Get Started
+                            <Link
+                            href="#cta"
+                            onClick={toggleMenu}
+                            className="relative inline-block w-fit"
+                            >
+                            <span className="absolute  rounded-full bg-gradient-to-r from-emerald-400 via-lime-400 to-cyan-400 opacity-70 blur transition-opacity hover:opacity-100" />
+                            <span className="relative text-white bg-gradient-to-r from-emerald-400 via-lime-400 to-cyan-400 px-5 py-2 rounded-full block font-semibold">
+                                Comece agora
+                            </span>
                             </Link>
+
                         </li>
                     </ul>
                 </div>

@@ -2,22 +2,28 @@ import { ITestimonial } from "@/types";
 import { siteDetails } from "./siteDetails";
 
 export const testimonials: ITestimonial[] = [
-    {
-        name: 'John Smith',
-        role: 'CEO at Company',
-        message: `${siteDetails.siteName}'s AI-driven insights have transformed how we approach financial planning for our clients. It's an invaluable resource in the modern financial landscape.`,
-        avatar: '/images/testimonial-1.webp',
-    },
-    {
-        name: 'Jane Doe',
-        role: 'CTO at Startup',
-        message: `As a CTO, I'm impressed by ${siteDetails.siteName}'s robust security measures and seamless integrations. It's rare to find an app that balances user-friendliness with such advanced technology.`,
-        avatar: '/images/testimonial-2.webp',
-    },
-    {
-        name: 'Emily Johnson',
-        role: 'Product Manager',
-        message: `${siteDetails.siteName} is revolutionizing personal finance management. Its intuitive design and powerful features make it an indispensable tool for anyone serious about financial growth.`,
-        avatar: '/images/testimonial-3.webp',
-    },
+  {
+    name: 'Carlos Andrade',
+    role: 'Gerente de Operações na Hering',
+    message: `${siteDetails.siteName} otimizou nossa comunicação via WhatsApp e reduziu significativamente o risco de bloqueio dos nossos números. Hoje, conseguimos manter campanhas ativas com muito mais estabilidade.`,
+    avatar: '/images/testimonial-1.webp',
+  },
+  {
+    name: 'Fernanda Lima',
+    role: 'Coordenadora de Marketing na Centauro',
+    message: `A automação de aquecimento do ${siteDetails.siteName} nos ajudou a aumentar a taxa de entrega das mensagens e manter nossos contatos ativos sem interrupções. É uma solução indispensável para grandes operações.`,
+    avatar: '/images/testimonial-2.webp',
+  },
+  {
+    name: 'Rafael Souza',
+    role: 'Analista de Relacionamento na Unimed',
+    message: `Com o ${siteDetails.siteName}, conseguimos manter a saúde dos números de atendimento e evitar bloqueios, garantindo um suporte rápido e eficaz para nossos clientes todos os dias.`,
+    avatar: '/images/testimonial-3.webp',
+  },
+//   {
+//     name: 'Mariana Torres',
+//     role: 'Supervisora de Atendimento na Petz',
+//     message: `O painel de monitoramento do ${siteDetails.siteName} nos dá controle total sobre o aquecimento e desempenho dos números. É fácil de usar e trouxe muito mais segurança para nossa operação.`,
+//     avatar: '/images/testimonial-4.webp',
+//   },
 ];

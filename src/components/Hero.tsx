@@ -24,8 +24,14 @@ const Hero: React.FC = () => {
                 <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">{heroDetails.heading}</h1>
                 <p className="mt-4 text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
                 <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
-                    <AppStoreButton dark />
-                    <PlayStoreButton dark />
+                    <div className="flex flex-col gap-2">
+                        <button className="bg-green-600 text-white rounded-full p-2 px-6 font-semibold">
+                            Começar teste grátis
+                        </button>
+                    <button className="bg-zinc-200 text-zinc-700 rounded-full p-2 px-6 font-semibold">
+                        Já sou cliente
+                    </button>
+                    </div>
                 </div>
                 <Image
                     src={heroDetails.centerImageSrc}

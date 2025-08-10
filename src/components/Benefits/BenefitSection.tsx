@@ -7,6 +7,8 @@ import BenefitBullet from "./BenefitBullet";
 import SectionTitle from "../SectionTitle";
 import { IBenefit } from "@/types";
 
+
+
 interface Props {
     benefit: IBenefit;
     imageAtRight?: boolean;
@@ -68,7 +70,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
                             variants={childVariants}
                         >
                             <SectionTitle>
-                                <h3 className="lg:max-w-2xl">
+                                <h3 className="lg:max-w-2xl mb-6">
                                     {title}
                                 </h3>
                             </SectionTitle>
@@ -80,7 +82,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
 
                         <div className="mx-auto lg:ml-0 w-full">
                             {bullets.map((item, index) => (
-                                <BenefitBullet key={index} title={item.title} icon={item.icon} description={item.description} />
+                                <BenefitBullet key={index} title={item.title} image={item.image} description={item.description} />
                             ))}
                         </div>
                     </div>
