@@ -1,3 +1,5 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+
 export interface IMenuItem {
     text: string;
     url: string;
@@ -14,7 +16,7 @@ export interface IBenefitBullet {
     title: string;
     description: string;
     icon?: JSX.Element;
-    image?: unknown;
+    image: string | StaticImport;
 }
 
 export interface IPricing {
